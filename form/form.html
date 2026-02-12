@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Nome</h1>
+    <input type = "text" id = "Nome" oninput = "CheckNome()"/>
+    <div id = "WarnNome"></div>
+    <h1>Email</h1>
+    <input type = "text" id = "Email" oninput = "CheckEmail()"/>
+    <div id = "WarnEmail"></div>
+    <h1>Telefono</h1>
+    <input type = "text" id = "Telefono" oninput = "CheckNumero()"/>
+    <div id = "WarnNumero"></div>
+    <h1>Budget disponibile</h1>
+    <input type = "text" id = "Budget"/>
+    <div id = "WarnBudget"></div>
+    <h1>linguaggio desiderato</h1>
+    <div>
+    <input type="checkbox" id = "HTML" class = "checkbx"> HTML: €20/hr
+    </div>
+    <div>
+    <input type="checkbox" id = "PHP" class = "checkbx"> PHP: €25/hr
+    </div>
+    <div>
+    <input type="checkbox" id = "ASP" class = "checkbx"> ASP: €30/hr
+    </div>
+    <div>
+    <input type="checkbox" id = "Java" class = "checkbx"> Java: €35/hr
+    </div>
+    <div>
+    <input type="checkbox" id = "C++" class = "checkbx"> C++: €40/hr
+    </div>
+    <div id = "WarnCheck"></div>
+    <script src = "./form.js"></script>
+    <button onclick="CalcolaPreventivo()">Calcola il preventivo</button>
+    <div id = "preventivo"></div>
+</body>
+</html>
