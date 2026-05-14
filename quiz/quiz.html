@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form quiz per scuola</title>
+</head>
+<body>
+    <div style = "text-align: center;">
+        <h1>Quiz</h1>
+    </div>
+    <label>Nome e cognome:</label><br>
+    <input type = text id ="nomeecognome" onblur = "check_namesurname()"><br>
+    <div id = "Warnnomeecognome"></div>
+    <label>Classe:</label><br>
+    <input type = text id ="classe" onblur = "check_class()">
+    <div id = "Warnclasse"></div>
+    <label>1. Quale fra questi non è un linguaggio di programmazione? </label><br>
+        <input type="radio" name = "q1" value = "c"> C <br>
+        <input type="radio" name = "q1" value = "js"> JS <br>
+        <input type="radio" name = "q1" value = "html"> HTML <br>
+        <input type="radio" name = "q1" value = "c++"> C++ <br>
+    <div id = "Warnq1"></div>
+    <label>2. Quale fra queste non è una keyword nel linguaggio di programmazione C? </label><br>
+        <input type="radio" name="q2" value = "int"> INT <br>
+        <input type="radio" name="q2" value = "double"> DOUBLE <br>
+        <input type="radio" name="q2" value = "printf"> PRINTF <br>
+        <input type="radio" name="q2" value = "struct"> STRUCT <br>
+    <div id = "Warnq2"></div>
+    <label>3. Quale fra questi animali è un rettile? </label><br>
+        <input type="radio" name = "q3" value = "serpente"> SERPENTE <br>
+        <input type="radio" name = "q3" value = "delfino"> DELFINO <br>
+        <input type="radio" name = "q3" value = "cavallo"> CAVALLO <br>
+        <input type="radio" name = "q3" value = "pappagallo"> PAPPAGALLO <br>
+    <div id = "Warnq3"></div>
+    <button onclick = "check_quiz()">Submit</button>
+    <div id = "Warncheck"></div>
+    <script src="quiz.js"></script>
+</body>
+</html>

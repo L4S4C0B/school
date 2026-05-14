@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>Richiesta Consulenza Tecnica</h2>
+
+    <label>Nome Utente:</label><br>
+    <input type="text" name="username" id = "username" onblur="validate_username()"><br><br>
+    <div id = "Warnusername"></div>
+
+    <label>Password:</label><br>
+    <input type="password" name="password" id = "password" onblur="validate_password()"><br><br>
+    <div id = "Warnpassword"></div>
+
+    <label>Telefono:</label><br>
+    <input type="text" name="telefono" id = "telefono" onblur="validate_telefono()"><br><br>
+    <div id = "Warntelefono"></div>
+
+    <label>Sito Web:</label><br>
+    <input type="text" name="sito" id = "sito" onblur="validate_URL()"><br><br>
+    <div id="Warnurl"></div>
+
+    <label>Nome Organizzazione:</label><br>
+    <input type="text" name="organizzazione" id = "ente"><br><br>
+
+    <label>Ambito di Consulenza:</label><br>
+        <input type="checkbox" name="ambito[]" value="Linux" id = "linux">Linux<br>
+        <input type="checkbox" name="ambito[]" value="Windows" id = "windows">Windows<br>
+        <input type="checkbox" name="ambito[]" value="Android" id = "android">Android<br>
+        <input type="checkbox" name="ambito[]" value="Database" id = "database">Database<br><br>
+
+    <label>Data richiesta:</label><br>
+    <input type="date" name="data_richiesta" id = "data"><br><br>
+    <div id = "Warndata"></div>
+
+    <button onclick = "stampa_richiesta()">Invia richiesta</button>
+    <div id = "Warncheck"></div>
+
+    <script src="preparazione.js"></script>
+</body>
+</html>
