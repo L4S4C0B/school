@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funzioni</title>
+    <script src = "https://www.gstatic.com/charts/loader.js"></script>
+    <script>google.charts.load('current', {'packages':['corechart']})</script>
+    <style>
+        h1{
+            text-align: center;
+        }
+
+        #grafico{
+            width: 900px; 
+            height: 600px; 
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Generatore di funzioni</h1><br>
+    <button id = "retta" name = "retta" onclick="menu_r()">Retta</button><br>
+    <button id = "parabola" name = "parabola" onclick="menu_p()">Parabola</button><br>
+    <div id = "menu"></div>
+    <div id = "risultato"></div>
+    <div id = "grafico"></div>
+    <script src = "function.js"></script>
+</body>
+</html>
